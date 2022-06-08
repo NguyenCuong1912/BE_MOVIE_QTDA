@@ -6,7 +6,7 @@ const { roomRouter } = require('./Room.router');
 const { TypeUserRouter } = require('./TypeUser.routers');
 const { userRouter } = require('./User.routers');
 const { seatRouter } = require('./Seat.router');
-
+const { showTimeRouter } = require('./ShowTimes.router');
 
 const rootRouter = express.Router();
 rootRouter.use('/typeUsers', TypeUserRouter);
@@ -16,6 +16,7 @@ rootRouter.use('/cinemas', cinemasRouter);
 rootRouter.use('/groupCinemas', groupCinemasRouter);
 rootRouter.use('/rooms', roomRouter);
 rootRouter.use('/seats', seatRouter);
+rootRouter.use('/showTimes', showTimeRouter);
 
 
 
