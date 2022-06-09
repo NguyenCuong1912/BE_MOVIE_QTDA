@@ -1,6 +1,6 @@
 const express = require('express');
 const { TypeUser } = require('../models');
-const { createTypeUser, getAll, getDetails, deleteTypeUser, update } = require('../controllers/TyepeUser.controllers');
+const { createTypeUser, getAll, getDetails, deleteTypeUser, update } = require('../controllers/TyepeUser.controller');
 const { checkExists } = require('../middleware/validations/checkExists');
 const { authentication } = require('../middleware/auth/authentication');
 const { authorize } = require('../middleware/auth/authorize');
